@@ -28,6 +28,7 @@ async def cmd_connect(message: Message, db: Database, config: Config, bot: Bot, 
         group_id=message.chat.id,
         title=message.chat.title or "Группа",
         timezone=config.default_timezone,
+        thread_id=message.message_thread_id,
     )
     await db.upsert_member(
         message.chat.id, message.from_user.id, message.from_user.username, message.from_user.full_name

@@ -135,12 +135,18 @@ async def send_report(callback: CallbackQuery, state: FSMContext, db: Database, 
     await db.submit_report(group_id, callback.from_user.id, report_date, submitted_at)
 
     group_text = group_report_text(
+        callback.from_user.id,
         callback.from_user.full_name,
+        report_date,
         data["today_text"],
         data["tomorrow_text"],
         now.strftime("%H:%M"),
     )
-    await bot.send_message(group_id, group_text)
+    await bot.send_message(
+        group_id,
+        group_text,
+        message_thread_id=group["thread_id"],
+    )
 
     await state.clear()
     await callback.message.edit_reply_markup(reply_markup=None)

@@ -7,9 +7,11 @@ CREATE TABLE IF NOT EXISTS groups (
     group_id INTEGER PRIMARY KEY,
     title TEXT,
     connected INTEGER NOT NULL DEFAULT 1,
-    window_start TEXT NOT NULL DEFAULT '18:00',
+    window_start TEXT NOT NULL DEFAULT '18:00
+    ',
     window_end TEXT NOT NULL DEFAULT '21:00',
-    timezone TEXT NOT NULL DEFAULT 'Asia/Bishkek'
+    timezone TEXT NOT NULL DEFAULT 'Asia/Bishkek',
+    thread_id INTEGER
 );
 
 CREATE TABLE IF NOT EXISTS members (
@@ -43,23 +45,38 @@ class Database:
         self._conn = await aiosqlite.connect(self.path)
         self._conn.row_factory = aiosqlite.Row
         await self._conn.executescript(SCHEMA)
+
+        cursor = await self._conn.execute("PRAGMA table_info(groups)")
+        columns = await cursor.fetchall()
+        if "thread_id" not in {column["name"] for column in columns}:
+            await self._conn.execute(
+                "ALTER TABLE groups ADD COLUMN thread_id INTEGER"
+            )
+
         await self._conn.commit()
 
     async def close(self):
         if self._conn:
             await self._conn.close()
 
-
-    async def upsert_group(self, group_id: int, title: str, timezone: str):
+    async def upsert_group(
+            self,
+            group_id: int,
+            title: str,
+            timezone: str,
+            thread_id: Optional[int] = None,
+    ):
         await self._conn.execute(
             """
-            INSERT INTO groups (group_id, title, timezone)
-            VALUES (?, ?, ?)
+            INSERT INTO groups (group_id, title, timezone, thread_id)
+            VALUES (?, ?, ?, ?)
             ON CONFLICT(group_id) DO UPDATE SET
                 title = excluded.title,
+                timezone = excluded.timezone,
+                thread_id = excluded.thread_id,
                 connected = 1
             """,
-            (group_id, title, timezone),
+            (group_id, title, timezone, thread_id),
         )
         await self._conn.commit()
 

@@ -12,16 +12,24 @@ def _minus_one_hour(hhmm: str) -> tuple[int, int]:
     return dt.hour, dt.minute
 
 
+async def _bot_link(bot: Bot) -> str:
+    bot_user = await bot.get_me()
+    return f"https://t.me/{bot_user.username}"
+
+
 async def job_open_reminder(bot: Bot, db: Database, group_id: int):
     group = await db.get_group(group_id)
     if not group or not group["connected"]:
         return
+    bot_link = await _bot_link(bot)
     await bot.send_message(
         group_id,
         "🔔 Напоминание!\n\n"
-        "Приём ежедневных отчётов открыт @all .\n"
+        "Приём ежедневных отчётов открыт.\n"
         f"Пожалуйста, отправьте отчёт до {group['window_end']}.\n\n"
-        "Команда: /standup",
+        f"🤖 Напишите отчёт боту: {bot_link}\n"
+        "Запустите бота и начните заполнение командой /standup",
+        message_thread_id=group["thread_id"],
     )
 
 
@@ -38,17 +46,21 @@ async def job_pre_close_reminder(bot: Bot, db: Database, group_id: int):
     if not pending:
         return
 
+    bot_link = await _bot_link(bot)
     mentions = " ".join(
         format_mention(m["user_id"], m["username"], m["full_name"]) for m in pending
     )
     await bot.send_message(
         group_id,
+        "😂 <b>Ээээ, кетир отчёт!</b>\n\n"
         "🔔 Напоминание!\n"
         f"{mentions}\n"
         "Вы ещё не отправили сегодняшний отчёт.\n"
         "До окончания приёма осталось менее одного часа.\n\n"
-        "Используйте /standup",
+        f"🤖 Напишите отчёт боту: {bot_link}\n"
+        "Запустите бота и начните заполнение командой /standup",
         parse_mode="HTML",
+        message_thread_id=group["thread_id"],
     )
 
 
@@ -66,6 +78,7 @@ async def job_summary(bot: Bot, db: Database, group_id: int):
         await bot.send_message(
             group_id,
             "🎉 Отлично!\n\nСегодня все участники успешно отправили ежедневный отчёт.",
+            message_thread_id=group["thread_id"],
         )
         return
 
@@ -76,6 +89,7 @@ async def job_summary(bot: Bot, db: Database, group_id: int):
         f"✅ Отправили отчёт: {len(submitted)}\n\n"
         f"❌ Не отправили:\n{names}",
         parse_mode="HTML",
+        message_thread_id=group["thread_id"],
     )
 
 

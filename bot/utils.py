@@ -1,4 +1,6 @@
 import datetime
+from html import escape
+
 import pytz
 from aiosqlite import Row
 
@@ -43,10 +45,22 @@ def report_preview_text(full_name: str, today_text: str, tomorrow_text: str) -> 
     )
 
 
-def group_report_text(full_name: str, today_text: str, tomorrow_text: str, time_str: str) -> str:
+def group_report_text(
+    user_id: int,
+    full_name: str,
+    report_date: str,
+    today_text: str,
+    tomorrow_text: str,
+    time_str: str,
+) -> str:
+    display_date = datetime.date.fromisoformat(report_date).strftime("%d.%m.%Y")
+    author_link = f'<a href="tg://user?id={user_id}">{escape(full_name)}</a>'
     return (
-        "📋 <b>Новый ежедневный отчёт</b>\n"
-        f"👤 {full_name}\n\n"
+        f"📅 {display_date}\n\n"
+        "━━━━━━━━━━━━\n"
+        "👤 <b>АВТОР ОТЧЁТА</b>\n"
+        f"🔥 <b>{author_link}</b>\n"
+        "━━━━━━━━━━━━\n\n"
         "📅 <b>Сегодня</b>\n"
         f"{to_bullets(today_text)}\n\n"
         "📅 <b>Завтра</b>\n"
