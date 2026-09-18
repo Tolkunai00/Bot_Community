@@ -1,0 +1,145 @@
+2026-09-16 17:10:18,712 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-16 17:10:18,822 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-16 17:10:18,822 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-16 17:10:18,822 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-16 17:10:18,822 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-16 17:10:18,822 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-16 17:10:18,822 INFO apscheduler.scheduler: Added job "job_open_reminder" to job store "default"
+2026-09-16 17:10:18,822 INFO apscheduler.scheduler: Added job "job_pre_close_reminder" to job store "default"
+2026-09-16 17:10:18,822 INFO apscheduler.scheduler: Added job "job_summary" to job store "default"
+2026-09-16 17:10:18,829 INFO apscheduler.scheduler: Added job "job_open_reminder" to job store "default"
+2026-09-16 17:10:18,830 INFO apscheduler.scheduler: Added job "job_pre_close_reminder" to job store "default"
+2026-09-16 17:10:18,830 INFO apscheduler.scheduler: Added job "job_summary" to job store "default"
+2026-09-16 17:10:18,830 INFO apscheduler.scheduler: Scheduler started
+2026-09-16 17:10:19,762 INFO __main__: Бот запущен
+2026-09-16 17:10:19,772 INFO aiogram.dispatcher: Start polling
+2026-09-16 17:10:19,772 INFO aiogram.dispatcher: Run polling for bot @Community_report_bot id=8681994012 - 'Daily_Report_Bot'
+2026-09-16 17:10:20,280 INFO aiogram.event: Update id=852937023 is handled. Duration 109 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937024 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937025 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937026 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937027 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937028 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937029 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937030 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937031 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937032 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937033 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937034 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937035 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937036 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937037 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937038 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937039 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937040 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937041 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937042 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,281 INFO aiogram.event: Update id=852937043 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,289 INFO aiogram.event: Update id=852937044 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,289 INFO aiogram.event: Update id=852937045 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,290 INFO aiogram.event: Update id=852937046 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,290 INFO aiogram.event: Update id=852937047 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,290 INFO aiogram.event: Update id=852937048 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937049 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937050 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937051 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937052 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937053 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937054 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937055 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937056 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937057 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937058 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937059 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937060 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937061 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937062 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937063 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937064 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937065 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937066 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937067 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937068 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937069 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937070 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,291 INFO aiogram.event: Update id=852937071 is handled. Duration 62 ms by bot id=8681994012
+2026-09-16 17:10:20,297 INFO aiogram.event: Update id=852937072 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,297 INFO aiogram.event: Update id=852937073 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,297 INFO aiogram.event: Update id=852937074 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,297 INFO aiogram.event: Update id=852937075 is handled. Duration 77 ms by bot id=8681994012
+2026-09-16 17:10:20,297 INFO aiogram.event: Update id=852937076 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,299 INFO aiogram.event: Update id=852937077 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937078 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937079 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937080 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937081 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937082 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937083 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937084 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937085 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937086 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937087 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937088 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937089 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937090 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937091 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937092 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937093 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937094 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937095 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937096 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,300 INFO aiogram.event: Update id=852937097 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,306 INFO aiogram.event: Update id=852937098 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,306 INFO aiogram.event: Update id=852937099 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,306 INFO aiogram.event: Update id=852937100 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,306 INFO aiogram.event: Update id=852937101 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,306 INFO aiogram.event: Update id=852937102 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,306 INFO aiogram.event: Update id=852937103 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,306 INFO aiogram.event: Update id=852937104 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,306 INFO aiogram.event: Update id=852937105 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,306 INFO aiogram.event: Update id=852937106 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:10:20,306 INFO aiogram.event: Update id=852937107 is handled. Duration 61 ms by bot id=8681994012
+2026-09-16 17:26:25,379 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:26:25,385 WARNING aiogram.dispatcher: Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8681994012)
+2026-09-16 17:26:33,057 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:26:33,062 WARNING aiogram.dispatcher: Sleep for 1.293078 seconds and try again... (tryings = 1, bot id = 8681994012)
+2026-09-16 17:26:38,962 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:26:38,962 WARNING aiogram.dispatcher: Sleep for 1.535843 seconds and try again... (tryings = 2, bot id = 8681994012)
+2026-09-16 17:26:45,546 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:26:45,548 WARNING aiogram.dispatcher: Sleep for 2.095184 seconds and try again... (tryings = 3, bot id = 8681994012)
+2026-09-16 17:26:53,100 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:26:53,102 WARNING aiogram.dispatcher: Sleep for 2.583829 seconds and try again... (tryings = 4, bot id = 8681994012)
+2026-09-16 17:27:01,802 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:27:01,802 WARNING aiogram.dispatcher: Sleep for 3.342062 seconds and try again... (tryings = 5, bot id = 8681994012)
+2026-09-16 17:27:08,991 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:27:08,999 WARNING aiogram.dispatcher: Sleep for 4.310895 seconds and try again... (tryings = 6, bot id = 8681994012)
+2026-09-16 17:27:18,292 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:27:18,292 WARNING aiogram.dispatcher: Sleep for 5.037771 seconds and try again... (tryings = 7, bot id = 8681994012)
+2026-09-16 17:27:28,718 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:27:28,718 WARNING aiogram.dispatcher: Sleep for 4.897815 seconds and try again... (tryings = 8, bot id = 8681994012)
+2026-09-16 17:27:39,109 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:27:39,112 WARNING aiogram.dispatcher: Sleep for 5.018691 seconds and try again... (tryings = 9, bot id = 8681994012)
+2026-09-16 17:27:49,419 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:27:49,421 WARNING aiogram.dispatcher: Sleep for 5.276066 seconds and try again... (tryings = 10, bot id = 8681994012)
+2026-09-16 17:28:00,037 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:28:00,040 WARNING aiogram.dispatcher: Sleep for 4.981379 seconds and try again... (tryings = 11, bot id = 8681994012)
+2026-09-16 17:28:10,208 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:28:10,214 WARNING aiogram.dispatcher: Sleep for 4.965603 seconds and try again... (tryings = 12, bot id = 8681994012)
+2026-09-16 17:28:20,486 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:28:20,488 WARNING aiogram.dispatcher: Sleep for 5.008607 seconds and try again... (tryings = 13, bot id = 8681994012)
+2026-09-16 17:28:31,095 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:28:31,095 WARNING aiogram.dispatcher: Sleep for 4.849904 seconds and try again... (tryings = 14, bot id = 8681994012)
+2026-09-16 17:28:41,093 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:28:41,098 WARNING aiogram.dispatcher: Sleep for 4.871519 seconds and try again... (tryings = 15, bot id = 8681994012)
+2026-09-16 17:28:51,376 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:28:51,376 WARNING aiogram.dispatcher: Sleep for 4.958294 seconds and try again... (tryings = 16, bot id = 8681994012)
+2026-09-16 17:29:01,790 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:29:01,792 WARNING aiogram.dispatcher: Sleep for 4.869862 seconds and try again... (tryings = 17, bot id = 8681994012)
+2026-09-16 17:29:11,890 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:29:11,891 WARNING aiogram.dispatcher: Sleep for 5.073587 seconds and try again... (tryings = 18, bot id = 8681994012)
+2026-09-16 17:29:22,293 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:29:22,306 WARNING aiogram.dispatcher: Sleep for 5.098503 seconds and try again... (tryings = 19, bot id = 8681994012)
+2026-09-16 17:29:32,914 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:29:32,915 WARNING aiogram.dispatcher: Sleep for 5.047721 seconds and try again... (tryings = 20, bot id = 8681994012)
+2026-09-16 17:29:43,674 ERROR aiogram.dispatcher: Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-16 17:29:43,676 WARNING aiogram.dispatcher: Sleep for 4.982814 seconds and try again... (tryings = 21, bot id = 8681994012)

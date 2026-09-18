@@ -1,3 +1,6 @@
+import logging
+from html import escape
+
 from aiogram import Bot, F, Router
 from aiogram.enums import ChatType
 from aiogram.filters import Command
@@ -6,9 +9,17 @@ from aiogram.types import CallbackQuery, Message
 from bot.database import Database, today_str
 from bot.keyboards import preview_keyboard
 from bot.states import StandupStates
-from bot.utils import (group_report_text, now_in_tz, report_preview_text, window_status,)
+from bot.utils import (
+    group_report_text,
+    now_in_tz,
+    report_preview_text,
+    to_bullets,
+    window_status,
+)
 
 router = Router(name="standup")
+logger = logging.getLogger(__name__)
+MAX_FORMATTED_SECTION_LENGTH = 1500
 
 UNSUPPORTED_REPLIES = {
     "photo": "📷\n\nИзвините.\nЯ принимаю только текстовые сообщения.\n\nПожалуйста, используйте команду /standup",
@@ -31,6 +42,14 @@ def _unsupported_reply(message: Message) -> str:
     if message.document:
         return UNSUPPORTED_REPLIES["document"]
     return "Пожалуйста, отправьте ответ текстовым сообщением."
+
+
+def _report_text_error(text: str) -> str | None:
+    if not text.strip():
+        return "Ответ не должен быть пустым. Пожалуйста, напишите текст."
+    if len(to_bullets(text)) > MAX_FORMATTED_SECTION_LENGTH:
+        return "Ответ слишком длинный. Сократите его и отправьте ещё раз."
+    return None
 
 
 @router.message(Command("standup"), F.chat.type == ChatType.PRIVATE)
@@ -78,6 +97,9 @@ async def cmd_standup(message: Message, state: FSMContext, db: Database):
 
 @router.message(StandupStates.waiting_today, F.text)
 async def process_today(message: Message, state: FSMContext):
+    if error := _report_text_error(message.text):
+        await message.answer(error)
+        return
     await state.update_data(today_text=message.text)
     await state.set_state(StandupStates.waiting_tomorrow)
     await message.answer(
@@ -92,6 +114,9 @@ async def reject_today_non_text(message: Message):
 
 @router.message(StandupStates.waiting_tomorrow, F.text)
 async def process_tomorrow(message: Message, state: FSMContext, db: Database):
+    if error := _report_text_error(message.text):
+        await message.answer(error)
+        return
     data = await state.update_data(tomorrow_text=message.text)
 
     await db.save_draft(
@@ -125,14 +150,25 @@ async def edit_report(callback: CallbackQuery, state: FSMContext):
 @router.callback_query(StandupStates.preview, F.data == "standup:send")
 async def send_report(callback: CallbackQuery, state: FSMContext, db: Database, bot: Bot):
     data = await state.get_data()
+    required_fields = {"group_id", "report_date", "today_text", "tomorrow_text"}
+    if not required_fields.issubset(data):
+        await callback.answer(
+            "Черновик устарел. Запустите /standup ещё раз.",
+            show_alert=True,
+        )
+        return
     group_id = data["group_id"]
     report_date = data["report_date"]
 
     group = await db.get_group(group_id)
+    if not group or not group["connected"]:
+        await callback.answer(
+            "Группа больше не подключена. Обратитесь к администратору.",
+            show_alert=True,
+        )
+        return
     now = now_in_tz(group["timezone"])
     submitted_at = now.strftime("%Y-%m-%d %H:%M:%S")
-
-    await db.submit_report(group_id, callback.from_user.id, report_date, submitted_at)
 
     group_text = group_report_text(
         callback.from_user.id,
@@ -142,11 +178,21 @@ async def send_report(callback: CallbackQuery, state: FSMContext, db: Database, 
         data["tomorrow_text"],
         now.strftime("%H:%M"),
     )
-    await bot.send_message(
-        group_id,
-        group_text,
-        message_thread_id=group["thread_id"],
-    )
+    try:
+        await bot.send_message(
+            group_id,
+            group_text,
+            message_thread_id=group["thread_id"],
+        )
+    except Exception:
+        logger.exception("Не удалось опубликовать отчёт в группе %s", group_id)
+        await callback.answer(
+            "Не удалось отправить отчёт. Попробуйте ещё раз.",
+            show_alert=True,
+        )
+        return
+
+    await db.submit_report(group_id, callback.from_user.id, report_date, submitted_at)
 
     await state.clear()
     await callback.message.edit_reply_markup(reply_markup=None)
@@ -173,7 +219,7 @@ async def cmd_myreport(message: Message, db: Database):
 
     await message.answer(
         "📋 <b>Ваш сегодняшний отчёт</b>\n\n"
-        f"📅 Сегодня\n{report['today_text']}\n\n"
-        f"📅 Завтра\n{report['tomorrow_text']}\n\n"
+        f"📅 Сегодня\n{escape(report['today_text'])}\n\n"
+        f"📅 Завтра\n{escape(report['tomorrow_text'])}\n\n"
         "Статус: ✅ Отправлен"
     )

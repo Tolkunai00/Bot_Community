@@ -34,7 +34,7 @@ async def cmd_connect(message: Message, db: Database, config: Config, bot: Bot, 
         message.chat.id, message.from_user.id, message.from_user.username, message.from_user.full_name
     )
     group = await db.get_group(message.chat.id)
-    schedule_group_jobs(scheduler, bot, db, group)
+    schedule_group_jobs(scheduler, bot, db, group, config.reminder_time)
 
     await message.answer(
         "✅ Группа подключена к боту.\n\n"

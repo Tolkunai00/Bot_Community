@@ -25,8 +25,13 @@ cp .env.example .env
 ```
 BOT_TOKEN=123456:ваш_токен
 DEFAULT_TIMEZONE=Asia/Bishkek
-DATABASE_PATH=daily_report_bot.db
+DATABASE_PATH=bot/daily_report_bot.db
+REMINDER_TIME=20:00
 ```
+
+`REMINDER_TIME` задаёт время повторного напоминания в формате `ЧЧ:ММ`.
+После изменения `.env` перезапустите бота. Итоговое сообщение отправляется
+во время `window_end` группы (по умолчанию в 21:00).
 
 3. У бота в BotFather включите **Group Privacy = Disabled**
    (`/mybots` → выбрать бота → `Bot Settings` → `Group Privacy` → `Turn off`),

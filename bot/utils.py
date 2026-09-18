@@ -23,7 +23,7 @@ def window_status(group_row: Row) -> str:
 
     if now < start:
         return "too_early"
-    if now > end:
+    if now >= end:
         return "closed"
     return "open"
 
@@ -31,13 +31,13 @@ def window_status(group_row: Row) -> str:
 def format_mention(user_id: int, username: str | None, full_name: str) -> str:
     if username:
         return f"@{username}"
-    return f'<a href="tg://user?id={user_id}">{full_name}</a>'
+    return f'<a href="tg://user?id={user_id}">{escape(full_name)}</a>'
 
 
 def report_preview_text(full_name: str, today_text: str, tomorrow_text: str) -> str:
     return (
         "📋 <b>Проверьте отчёт</b>\n"
-        f"👤 {full_name}\n\n"
+        f"👤 {escape(full_name)}\n\n"
         "📅 <b>Сегодня</b>\n"
         f"{to_bullets(today_text)}\n\n"
         "📅 <b>Завтра</b>\n"
@@ -73,4 +73,4 @@ def to_bullets(text: str) -> str:
     lines = [line.strip() for line in text.replace(",", "\n").splitlines() if line.strip()]
     if not lines:
         lines = [text.strip()]
-    return "\n".join(f"• {line}" for line in lines)
+    return "\n".join(f"• {escape(line)}" for line in lines)

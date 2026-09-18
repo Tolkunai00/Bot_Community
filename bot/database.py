@@ -7,8 +7,7 @@ CREATE TABLE IF NOT EXISTS groups (
     group_id INTEGER PRIMARY KEY,
     title TEXT,
     connected INTEGER NOT NULL DEFAULT 1,
-    window_start TEXT NOT NULL DEFAULT '18:00
-    ',
+    window_start TEXT NOT NULL DEFAULT '18:00',
     window_end TEXT NOT NULL DEFAULT '21:00',
     timezone TEXT NOT NULL DEFAULT 'Asia/Bishkek',
     thread_id INTEGER
@@ -42,22 +41,36 @@ class Database:
         self._conn: Optional[aiosqlite.Connection] = None
 
     async def connect(self):
+        await self.close()
         self._conn = await aiosqlite.connect(self.path)
-        self._conn.row_factory = aiosqlite.Row
-        await self._conn.executescript(SCHEMA)
+        try:
+            self._conn.row_factory = aiosqlite.Row
+            await self._conn.executescript(SCHEMA)
 
-        cursor = await self._conn.execute("PRAGMA table_info(groups)")
-        columns = await cursor.fetchall()
-        if "thread_id" not in {column["name"] for column in columns}:
+            cursor = await self._conn.execute("PRAGMA table_info(groups)")
+            columns = await cursor.fetchall()
+            if "thread_id" not in {column["name"] for column in columns}:
+                await self._conn.execute(
+                    "ALTER TABLE groups ADD COLUMN thread_id INTEGER"
+                )
+
+            # Repair values created by the old schema where the default contained
+            # an accidental newline and spaces ("18:00\n    ").
             await self._conn.execute(
-                "ALTER TABLE groups ADD COLUMN thread_id INTEGER"
+                "UPDATE groups SET window_start = "
+                "TRIM(window_start, ' ' || CHAR(9) || CHAR(10) || CHAR(13)) "
+                "WHERE window_start != "
+                "TRIM(window_start, ' ' || CHAR(9) || CHAR(10) || CHAR(13))"
             )
-
-        await self._conn.commit()
+            await self._conn.commit()
+        except Exception:
+            await self.close()
+            raise
 
     async def close(self):
-        if self._conn:
-            await self._conn.close()
+        connection, self._conn = self._conn, None
+        if connection:
+            await connection.close()
 
     async def upsert_group(
             self,

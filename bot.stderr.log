@@ -1,0 +1,85 @@
+2026-09-13 20:50:24,115 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:50:50,159 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:51:16,212 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:51:42,268 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:52:08,322 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:52:34,342 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:53:00,388 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:54:33,857 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Подключение к сети было разорвано локальной системой]). Повтор через 5 сек.
+2026-09-13 20:55:00,070 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:55:26,129 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:55:52,165 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:56:18,215 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:56:44,267 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:57:10,321 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:57:36,389 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:58:02,443 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:58:28,511 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:58:54,564 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:59:20,621 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 20:59:46,673 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+2026-09-13 21:00:12,723 WARNING __main__: Telegram API недоступен (HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]). Повтор через 5 сек.
+C:\Users\user\Bot_Community\.venv\Lib\site-packages\tzlocal\utils.py:39: UserWarning: Timezone offset does not match system offset: 18000 != 21600. Please, check your config files.
+  warnings.warn(msg)
+2026-09-13 21:14:32,947 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-13 21:14:32,948 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-13 21:14:32,948 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-13 21:14:32,949 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-13 21:14:32,949 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-13 21:14:32,950 INFO apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-09-13 21:14:32,952 INFO apscheduler.scheduler: Added job "job_open_reminder" to job store "default"
+2026-09-13 21:14:32,952 INFO apscheduler.scheduler: Added job "job_pre_close_reminder" to job store "default"
+2026-09-13 21:14:32,953 INFO apscheduler.scheduler: Added job "job_summary" to job store "default"
+2026-09-13 21:14:32,953 INFO apscheduler.scheduler: Added job "job_open_reminder" to job store "default"
+2026-09-13 21:14:32,954 INFO apscheduler.scheduler: Added job "job_pre_close_reminder" to job store "default"
+2026-09-13 21:14:32,954 INFO apscheduler.scheduler: Added job "job_summary" to job store "default"
+2026-09-13 21:14:32,954 INFO apscheduler.scheduler: Scheduler started
+2026-09-13 21:14:32,955 INFO __main__: Бот запущен
+2026-09-13 21:14:32,955 INFO aiogram.dispatcher: Start polling
+2026-09-13 21:14:32,956 INFO aiogram.dispatcher: Run polling for bot @Community_report_bot id=8681994012 - 'Daily_Report_Bot'
+2026-09-13 21:14:33,609 INFO aiogram.event: Update id=852936684 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,611 INFO aiogram.event: Update id=852936685 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,611 INFO aiogram.event: Update id=852936686 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,612 INFO aiogram.event: Update id=852936687 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,612 INFO aiogram.event: Update id=852936688 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,613 INFO aiogram.event: Update id=852936689 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,613 INFO aiogram.event: Update id=852936690 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,613 INFO aiogram.event: Update id=852936691 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,614 INFO aiogram.event: Update id=852936692 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,614 INFO aiogram.event: Update id=852936693 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,614 INFO aiogram.event: Update id=852936694 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,614 INFO aiogram.event: Update id=852936695 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,615 INFO aiogram.event: Update id=852936696 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,615 INFO aiogram.event: Update id=852936697 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,615 INFO aiogram.event: Update id=852936698 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,616 INFO aiogram.event: Update id=852936699 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,617 INFO aiogram.event: Update id=852936700 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,618 INFO aiogram.event: Update id=852936701 is handled. Duration 47 ms by bot id=8681994012
+2026-09-13 21:14:33,618 INFO aiogram.event: Update id=852936702 is handled. Duration 31 ms by bot id=8681994012
+2026-09-13 21:14:33,619 INFO aiogram.event: Update id=852936703 is handled. Duration 31 ms by bot id=8681994012
+2026-09-13 21:14:33,619 INFO aiogram.event: Update id=852936704 is handled. Duration 31 ms by bot id=8681994012
+2026-09-13 21:14:33,620 INFO aiogram.event: Update id=852936705 is handled. Duration 31 ms by bot id=8681994012
+2026-09-13 21:14:33,620 INFO aiogram.event: Update id=852936706 is handled. Duration 31 ms by bot id=8681994012
+2026-09-13 21:14:33,620 INFO aiogram.event: Update id=852936707 is handled. Duration 31 ms by bot id=8681994012
+2026-09-13 21:14:33,621 INFO aiogram.event: Update id=852936708 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,621 INFO aiogram.event: Update id=852936709 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,621 INFO aiogram.event: Update id=852936710 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,621 INFO aiogram.event: Update id=852936711 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,622 INFO aiogram.event: Update id=852936712 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,622 INFO aiogram.event: Update id=852936713 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,622 INFO aiogram.event: Update id=852936714 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,623 INFO aiogram.event: Update id=852936715 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,624 INFO aiogram.event: Update id=852936716 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,624 INFO aiogram.event: Update id=852936717 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,624 INFO aiogram.event: Update id=852936718 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,624 INFO aiogram.event: Update id=852936719 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,625 INFO aiogram.event: Update id=852936720 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,625 INFO aiogram.event: Update id=852936721 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,626 INFO aiogram.event: Update id=852936722 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,626 INFO aiogram.event: Update id=852936723 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,626 INFO aiogram.event: Update id=852936724 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,627 INFO aiogram.event: Update id=852936725 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:14:33,627 INFO aiogram.event: Update id=852936726 is handled. Duration 46 ms by bot id=8681994012
+2026-09-13 21:15:10,909 INFO aiogram.event: Update id=852936727 is handled. Duration 0 ms by bot id=8681994012
+2026-09-13 21:15:29,424 INFO aiogram.event: Update id=852936728 is handled. Duration 0 ms by bot id=8681994012
+2026-09-13 21:16:22,489 INFO aiogram.event: Update id=852936729 is handled. Duration 0 ms by bot id=8681994012
